@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import ModernNav from "@/components/ModernNav";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { ArrowRight, Search } from "lucide-react";
 import { useState } from "react";
@@ -96,12 +97,15 @@ export default function Blog() {
   });
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative">
+    <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
       {/* Animated Background */}
       <AnimatedBackground intensity="low" />
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border relative z-20">
+      <ModernNav />
+
+      {/* Old Nav - Remove */}
+      <nav className="hidden sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border relative z-20">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="/" className="text-2xl font-bold text-primary">Pixelkorea</a>
           <div className="hidden md:flex gap-8 text-sm">
@@ -114,18 +118,18 @@ export default function Blog() {
       </nav>
 
       {/* Header */}
-      <section className="py-16 md:py-24 bg-card/50 backdrop-blur-sm relative z-10">
-        <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-5xl font-bold mb-4">기술 문서 & 뉴스</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl">
+      <section className="pt-32 pb-16 relative z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <h1 className="text-6xl font-bold mb-4">기술 문서 & <span className="text-primary">뉴스</span></h1>
+          <p className="text-xl text-foreground/70 max-w-2xl">
             프로젝션 맵핑, 돔 시스템, 엣지 블랜딩 기술에 대한 최신 정보와 기술 가이드를 확인하세요.
           </p>
         </div>
       </section>
 
       {/* Search & Filter */}
-      <section className="py-12 border-b border-border relative z-10 bg-background/50 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 border-b border-border relative z-10">
+        <div className="max-w-7xl mx-auto px-6">
           {/* Search Bar */}
           <div className="mb-8 relative">
             <Search className="absolute left-4 top-3 w-5 h-5 text-muted-foreground" />
@@ -159,7 +163,7 @@ export default function Blog() {
 
       {/* Posts */}
       <section className="py-16 relative z-10">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           {filteredPosts.length > 0 ? (
             <div className="space-y-8">
               {filteredPosts.map((post) => (
@@ -168,15 +172,14 @@ export default function Blog() {
                   className="border-b border-border pb-8 hover:pb-8 transition"
                 >
                   <div className="flex items-start justify-between mb-3">
-                    <div className="flex items-center gap-3">
-                      <span className="text-xs font-medium text-primary bg-blue-50 px-3 py-1 rounded">
+                  <div className="flex items-center gap-3 mb-3">
+                      <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded">
                         {categories.find((c) => c.id === post.category)?.label}
                       </span>
-                      <span className="text-xs text-muted-foreground">{post.date}</span>
-                      <span className="text-xs text-muted-foreground">•</span>
-                      <span className="text-xs text-muted-foreground">{post.readTime}</span>
-                    </div>
-                  </div>
+                      <span className="text-xs text-foreground/60">{post.date}</span>
+                      <span className="text-xs text-foreground/60">•</span>
+                      <span className="text-xs text-foreground/60">{post.readTime}</span>
+                    </div>                </div>
 
                   <h2 className="text-2xl font-bold mb-3 hover:text-primary transition cursor-pointer">
                     {post.title}
@@ -209,19 +212,19 @@ export default function Blog() {
       </section>
 
       {/* Newsletter */}
-      <section className="py-16 md:py-24 bg-card/50 backdrop-blur-sm relative z-10">
+      <section className="py-16 md:py-24 relative z-10">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">새로운 포스트를 받아보세요</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4">새로운 포스트를 <span className="text-primary">받아보세요</span></h2>
+          <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
             최신 기술 문서와 프로젝트 사례가 발행되면 이메일로 알려드립니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input
               type="email"
               placeholder="이메일 주소"
-              className="flex-1 px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              className="flex-1 px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card"
             />
-            <Button className="bg-primary hover:bg-blue-700">구독</Button>
+            <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-background font-semibold">구독</Button>
           </div>
         </div>
       </section>

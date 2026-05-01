@@ -43,40 +43,40 @@
 }
 
 :root {
-  /* Pixelkorea Dark Theme with Animated Background */
-  --primary: #0052cc;                  /* Professional Blue */
-  --primary-foreground: #f1f5f9;
-  --sidebar-primary: #0052cc;
-  --sidebar-primary-foreground: #f1f5f9;
-  --chart-1: #0052cc;
-  --chart-2: #1e40af;
-  --chart-3: #06b6d4;                  /* Cyan */
-  --chart-4: #8b5cf6;                  /* Purple */
-  --chart-5: #60a5fa;
-  --radius: 0.5rem;
-  --background: #0f172a;               /* Deep Navy */
-  --foreground: #f1f5f9;               /* Bright Gray */
-  --card: #1e293b;                     /* Dark Slate */
-  --card-foreground: #f1f5f9;
-  --popover: #1e293b;
-  --popover-foreground: #f1f5f9;
+  /* Pixelkorea 2026 Modern Theme */
+  --primary: #00d9ff;                  /* Bright Cyan (Neon) */
+  --primary-foreground: #0a0e27;
+  --sidebar-primary: #00d9ff;
+  --sidebar-primary-foreground: #0a0e27;
+  --chart-1: #00d9ff;
+  --chart-2: #06b6d4;
+  --chart-3: #a855f7;                  /* Purple */
+  --chart-4: #ec4899;                  /* Pink */
+  --chart-5: #8b5cf6;
+  --radius: 0.75rem;
+  --background: #0a0e27;               /* Almost Black Navy */
+  --foreground: #f8fafc;               /* Almost White */
+  --card: #141829;                     /* Slightly Lighter Navy */
+  --card-foreground: #f8fafc;
+  --popover: #141829;
+  --popover-foreground: #f8fafc;
   --secondary: #1e293b;
   --secondary-foreground: #cbd5e1;
   --muted: #334155;
   --muted-foreground: #cbd5e1;
-  --accent: #06b6d4;                   /* Cyan */
-  --accent-foreground: #0f172a;
+  --accent: #00d9ff;                   /* Bright Cyan */
+  --accent-foreground: #0a0e27;
   --destructive: #ef4444;
-  --destructive-foreground: #f1f5f9;
-  --border: #334155;                   /* Dark Gray */
-  --input: #1e293b;
-  --ring: #06b6d4;
-  --sidebar: #1e293b;
-  --sidebar-foreground: #f1f5f9;
-  --sidebar-accent: #334155;
-  --sidebar-accent-foreground: #06b6d4;
-  --sidebar-border: #334155;
-  --sidebar-ring: #06b6d4;
+  --destructive-foreground: #f8fafc;
+  --border: #1e293b;                   /* Subtle Border */
+  --input: #141829;
+  --ring: #00d9ff;
+  --sidebar: #141829;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #00d9ff;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #00d9ff;
 }
 
 .dark {
