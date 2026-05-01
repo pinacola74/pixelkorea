@@ -56,11 +56,11 @@
   --chart-5: #00d9ff;
   --radius: 0.75rem;
   --background: #0a0e27;               /* Almost Black Navy */
-  --foreground: #f1f5f9;               /* Clean White */
+  --foreground: #ffffff;               /* Pure White */
   --card: #141829;                     /* Slightly Lighter Navy */
-  --card-foreground: #f1f5f9;
+  --card-foreground: #ffffff;
   --popover: #141829;
-  --popover-foreground: #f1f5f9;
+  --popover-foreground: #ffffff;
   --secondary: #1e293b;                /* Dark Gray */
   --secondary-foreground: #cbd5e1;     /* Light Gray */
   --muted: #334155;                    /* Medium Gray */
