@@ -18,22 +18,22 @@ export default function Solutions() {
       name: "SHOWLOGIX",
       tagline: "Professional Projection Control",
       description:
-        "프로젝션 맵핑 및 엣지블렌딩 전문 소프트웨어입니다. 무제한의 프로젝터를 하나의 시스템으로 제어하며, 고급 2D/3D 와핑 기술로 어떤 형태의 곡면에도 완벽한 픽셀 정렬을 달성합니다. 전문 엔지니어 없이도 클릭 몇 번으로 복잡한 프로젝션 시스템을 구축할 수 있습니다.",
+        "Advanced projection mapping software for multi-projector installations with edge-blending, warping, and real-time content management.",
       icon: "🎬",
       features: [
-        "프레임 정확도의 멀티 프로젝터 동기화",
-        "지능형 엣지블렌딩 및 와핑",
-        "클라우드 기반 콘텐츠 관리",
-        "실시간 진단 및 모니터링",
-        "직관적인 웹 기반 인터페이스",
-        "무제한 프로젝터 지원",
+        "Frame-accurate multi-projector synchronization",
+        "Intelligent edge-blending and warping",
+        "Cloud-based content management",
+        "Real-time diagnostics and monitoring",
+        "Intuitive web-based interface",
+        "Support for unlimited projectors",
       ],
       useCases: [
-        "박물관 및 전시관",
-        "테마파크 및 놀이공원",
-        "기업 행사 및 프레젠테이션",
-        "라이브 공연 및 이벤트",
-        "건축물 외벽 프로젝션",
+        "Museum installations",
+        "Theme park attractions",
+        "Corporate events",
+        "Live performances",
+        "Architectural projection",
       ],
       color: "from-primary/20 to-accent/20",
       cta: "EXPLORE SHOWLOGIX",
@@ -44,22 +44,22 @@ export default function Solutions() {
       name: "LIGHTMAGIC FUSION",
       tagline: "Dome Theater Excellence",
       description:
-        "돔 디스플레이 전문 소프트웨어로 360도 완전 몰입형 경험을 제공합니다. 자동 돔 캘리브레이션으로 설치 후 복잡한 수동 보정을 불필요하게 하며, 여러 프로젝터의 영상을 돔 전체에 완벽하게 블렌딩합니다. 4K/8K 고해상도 콘텐츠를 지원하며 인터랙티브 콘텐츠 연동도 가능합니다.",
+        "Specialized solution for dome theater displays with automatic geometric correction, advanced warping, and seamless 8K content playback.",
       icon: "🌌",
       features: [
-        "자동 돔 기하학 보정",
-        "8K 콘텐츠 60fps 지원",
-        "고급 와핑 알고리즘",
-        "완벽한 멀티 프로젝터 블렌딩",
-        "직관적인 돔 전용 컨트롤",
-        "엔터프라이즈급 안정성",
+        "Automatic dome geometry correction",
+        "8K content support at 60fps",
+        "Advanced warping algorithms",
+        "Seamless multi-projector blending",
+        "Intuitive dome-specific controls",
+        "Enterprise-grade reliability",
       ],
       useCases: [
-        "플래너타리움 및 우주관",
-        "과학관 및 교육 시설",
-        "테마파크 돔 시어터",
-        "몰입형 영상관",
-        "박물관 특별 전시 공간",
+        "Planetariums",
+        "Science centers",
+        "Theme park domes",
+        "Immersive theaters",
+        "Educational institutions",
       ],
       color: "from-accent/20 to-primary/20",
       cta: "EXPLORE LIGHTMAGIC",
@@ -86,7 +86,7 @@ export default function Solutions() {
               <span className="text-primary">SOLUTIONS</span>
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-              어떤 규모의 프로젝션 시스템이든 완벽하게 제어할 수 있는 최첨단 솔루션입니다.
+              Cutting-edge projection technology designed for immersive experiences at any scale.
             </p>
           </div>
         </section>
@@ -157,7 +157,7 @@ export default function Solutions() {
 
                   <div className="space-y-6">
                     <div>
-                      <h4 className="font-bold text-sm uppercase tracking-wider mb-3">주요 기능</h4>
+                      <h4 className="font-bold text-sm uppercase tracking-wider mb-3">All Features</h4>
                       <ul className="space-y-2">
                         {solution.features.map((feature, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
@@ -169,7 +169,7 @@ export default function Solutions() {
                     </div>
 
                     <div>
-                      <h4 className="font-bold text-sm uppercase tracking-wider mb-3">적용 분야</h4>
+                      <h4 className="font-bold text-sm uppercase tracking-wider mb-3">Ideal For</h4>
                       <ul className="space-y-1">
                         {solution.useCases.map((useCase, i) => (
                           <li key={i} className="text-sm text-foreground/70">
@@ -203,7 +203,7 @@ export default function Solutions() {
             </h2>
 
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              픽셀코리아의 전문가들이 당신의 프로젝트에 가장 적합한 솔루션을 선택하도록 도와드립니다.
+              Let our experts help you choose the perfect solution for your immersive project.
             </p>
 
             <Button
@@ -229,7 +229,7 @@ export default function Solutions() {
               </div>
 
               <div>
-                <h4 className="font-bold mb-4 text-sm uppercase tracking-wider">솔루션</h4>
+                <h4 className="font-bold mb-4 text-sm uppercase tracking-wider">Solutions</h4>
                 <ul className="space-y-2 text-sm text-foreground/60">
                   <li>
                     <a href="#" className="hover:text-primary transition-colors">
@@ -245,7 +245,7 @@ export default function Solutions() {
               </div>
 
               <div>
-                <h4 className="font-bold mb-4 text-sm uppercase tracking-wider">회사</h4>
+                <h4 className="font-bold mb-4 text-sm uppercase tracking-wider">Company</h4>
                 <ul className="space-y-2 text-sm text-foreground/60">
                   <li>
                     <a href="#" className="hover:text-primary transition-colors">
@@ -261,7 +261,7 @@ export default function Solutions() {
               </div>
 
               <div>
-                <h4 className="font-bold mb-4 text-sm uppercase tracking-wider">문의</h4>
+                <h4 className="font-bold mb-4 text-sm uppercase tracking-wider">Contact</h4>
                 <ul className="space-y-2 text-sm text-foreground/60">
                   <li>
                     <a href="#" className="hover:text-primary transition-colors">

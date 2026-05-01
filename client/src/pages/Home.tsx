@@ -15,16 +15,16 @@ export default function Home() {
 
   const categories = {
     attractions: {
-      title: "테마 시설",
-      items: ["테마파크", "관광 시설", "박물관 및 유적지", "플래너타리움 및 과학관"],
+      title: "Themed Attractions",
+      items: ["Theme Parks", "Visitor Attractions", "Museum & Heritage", "Planetariums & Science Centres"],
     },
     immersive: {
-      title: "몰입형 경험",
-      items: ["몰입형 전시", "프로젝션 맵핑", "인터랙티브 설치", "몰입형 시어터"],
+      title: "Immersive Experiences",
+      items: ["Immersive Exhibitions", "Projection Mapping", "Experiential Installations", "Immersive Theatre"],
     },
     events: {
-      title: "라이브 이벤트",
-      items: ["콘서트", "페스티벌", "투어", "식전 및 시상식"],
+      title: "Live Events",
+      items: ["Concerts", "Festivals", "Touring", "Ceremonies & Awards"],
     },
   };
 
@@ -48,21 +48,21 @@ export default function Home() {
                 <span className="text-primary">BY NATURE</span>
               </h1>
               <p className="text-xl md:text-2xl text-primary font-light">
-                더 가늵고, 더 연루스럽고, 더 단순한 프로젝션 솔루션
+                A lighter, greener, scalable and affordable projection solution
               </p>
             </div>
 
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-              단순한 조작, 강력한 성능, 간단한 인터페이스. 단 세 가지로 모든 프로젝션 시스템을 완벽하게 제어할 수 있다는 신녁에서 픽셀코리아를 만들었습니다.
+              We're projection experts. Bringing immersive experiences to life is second nature to us. It's why we created Pixelkorea.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <Button size="lg" className="bg-primary hover:opacity-90 text-background font-bold text-base">
-                제품 두른나들
+                DISCOVER OUR PRODUCTS
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10 text-primary font-bold text-base">
-                문의하기
+                GET IN TOUCH
               </Button>
             </div>
           </div>
@@ -74,22 +74,22 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="space-y-6">
                 <h2 className="text-6xl md:text-7xl font-black leading-tight">
-                  세계에서
+                  World's
                   <br />
-                  <span className="text-primary">가장 간단하고</span>,
+                  <span className="text-primary">smallest</span>,
                   <br />
-                  가장 <span className="font-light italic">강력한</span>
+                  most <span className="font-light italic">powerful</span>
                   <br />
-                  <span className="text-primary">마늤터 소프트웨어</span>
+                  <span className="text-primary">media engine</span>
                 </h2>
 
                 <p className="text-lg text-foreground/70 leading-relaxed">
-                  Showlogix 소프트웨어는 단 몇 번의 클릭으로 복잡한 다중 프로젝터 시스템을 구축할 수 있습니다. 고급 엣지블렌딩 및 와핑 기술으로 여러 프로젝터를 완벽하게 동기화하며, 단 멀른 스근에서도 중단 없는 영상 재생이 가능합니다.
+                  Our Showlogix software fits seamlessly into any display or projector. It's the invisible ingenuity powering complex, beautiful, artful video, able to be perfectly synchronized across multiple players using our own edge-blending and warping technology. We think of it like organic technology – light, flexible and better for the planet.
                 </p>
 
                 <div className="pt-4">
                   <Button className="bg-accent hover:opacity-90 text-background font-bold">
-                    더 알아보기
+                    Learn More
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
