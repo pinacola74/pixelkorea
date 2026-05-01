@@ -18,8 +18,9 @@ export default function Navigation() {
   const menuItems = [
     { label: "Solutions", href: "#solutions" },
     { label: "Products", href: "#products" },
-    { label: "Projects", href: "#projects" },
-    { label: "Blog", href: "#blog" },
+    { label: "Case Studies", href: "/case-studies" },
+    { label: "Support", href: "/support" },
+    { label: "Blog", href: "/blog" },
     { label: "About", href: "#about" },
   ];
 
