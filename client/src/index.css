@@ -44,40 +44,40 @@
 }
 
 :root {
-  /* Pixelkorea Professional Theme - Christie + Barco Style */
-  --primary: #00d9ff;                  /* Neon Cyan */
-  --primary-foreground: #0a0e27;
-  --sidebar-primary: #00d9ff;
-  --sidebar-primary-foreground: #0a0e27;
-  --chart-1: #00d9ff;
-  --chart-2: #00d9ff;
-  --chart-3: #00d9ff;
-  --chart-4: #00d9ff;
-  --chart-5: #00d9ff;
-  --radius: 0.75rem;
-  --background: #0a0e27;               /* Almost Black Navy */
+  /* Pixelkorea Professional Theme - Hive Style */
+  --primary: #d4af37;                  /* Gold */
+  --primary-foreground: #1a1a1a;
+  --sidebar-primary: #d4af37;
+  --sidebar-primary-foreground: #1a1a1a;
+  --chart-1: #d4af37;
+  --chart-2: #d4af37;
+  --chart-3: #d4af37;
+  --chart-4: #d4af37;
+  --chart-5: #d4af37;
+  --radius: 0.5rem;
+  --background: #1a1a1a;               /* Dark Gray */
   --foreground: #ffffff;               /* Pure White */
-  --card: #141829;                     /* Dark Gray */
+  --card: #2a2a2a;                     /* Medium Dark Gray */
   --card-foreground: #ffffff;
-  --popover: #141829;
+  --popover: #2a2a2a;
   --popover-foreground: #ffffff;
-  --secondary: #1e293b;                /* Medium Gray */
-  --secondary-foreground: #cbd5e1;     /* Light Gray */
-  --muted: #334155;                    /* Muted Gray */
-  --muted-foreground: #cbd5e1;
-  --accent: #00d9ff;                   /* Neon Cyan */
-  --accent-foreground: #0a0e27;
+  --secondary: #3a3a3a;                /* Lighter Gray */
+  --secondary-foreground: #e0e0e0;     /* Light Gray */
+  --muted: #4a4a4a;                    /* Muted Gray */
+  --muted-foreground: #b0b0b0;
+  --accent: #39ff14;                   /* Lime Green */
+  --accent-foreground: #1a1a1a;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #1e293b;
-  --input: #141829;
-  --ring: #00d9ff;
-  --sidebar: #141829;
+  --border: #3a3a3a;
+  --input: #2a2a2a;
+  --ring: #d4af37;
+  --sidebar: #2a2a2a;
   --sidebar-foreground: #ffffff;
-  --sidebar-accent: #1e293b;
-  --sidebar-accent-foreground: #00d9ff;
-  --sidebar-border: #1e293b;
-  --sidebar-ring: #00d9ff;
+  --sidebar-accent: #3a3a3a;
+  --sidebar-accent-foreground: #d4af37;
+  --sidebar-border: #3a3a3a;
+  --sidebar-ring: #d4af37;
 }
 
 .dark {
