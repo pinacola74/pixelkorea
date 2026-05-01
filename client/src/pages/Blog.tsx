@@ -224,7 +224,7 @@ export default function Blog() {
               placeholder="이메일 주소"
               className="flex-1 px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card"
             />
-            <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-background font-semibold">구독</Button>
+            <Button className="bg-primary hover:opacity-90 text-background font-semibold">구독</Button>
           </div>
         </div>
       </section>

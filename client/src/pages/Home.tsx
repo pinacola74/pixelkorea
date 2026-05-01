@@ -38,7 +38,7 @@ export default function Home() {
                   <h1 className="text-6xl md:text-7xl font-bold leading-tight">
                     모든 공간을
                     <br />
-                    <span className="bg-gradient-to-r from-primary via-accent to-purple-500 bg-clip-text text-transparent">
+                    <span className="text-primary">
                       캔버스로
                     </span>
                   </h1>
@@ -51,7 +51,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-background font-semibold group"
+                    className="bg-primary hover:opacity-90 text-background font-semibold group"
                   >
                     솔루션 살펴보기
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -170,7 +170,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-background font-semibold group">
+                <Button className="bg-primary hover:opacity-90 text-background font-semibold group">
                   자세히 알아보기
                   <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -178,7 +178,7 @@ export default function Home() {
 
               {/* Visual */}
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-purple-500/10 rounded-2xl blur-2xl" />
+                <div className="absolute inset-0 bg-primary/5 rounded-2xl blur-2xl" />
                 <div className="relative border border-primary/20 rounded-2xl p-8 backdrop-blur-sm bg-card/50 h-96 flex items-center justify-center">
                   <div className="text-center">
                     <Lightbulb className="w-20 h-20 text-primary/50 mx-auto mb-4" />
@@ -221,7 +221,7 @@ export default function Home() {
                     key={idx}
                     className="group relative p-8 border border-primary/20 rounded-2xl backdrop-blur-sm bg-card/50 hover:border-primary/50 transition-all duration-300"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
                     <div className="relative space-y-4">
                       <Icon className="w-12 h-12 text-primary" />
                       <h3 className="text-xl font-bold">{item.title}</h3>
@@ -334,8 +334,8 @@ export default function Home() {
         {/* CTA Section */}
         <section className="py-24 relative">
           <div className="max-w-4xl mx-auto px-6">
-            <div className="relative overflow-hidden rounded-3xl border border-primary/30 backdrop-blur-sm bg-gradient-to-br from-primary/20 via-accent/10 to-purple-500/10 p-12 md:p-16">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/5 opacity-50" />
+            <div className="relative overflow-hidden rounded-3xl border border-primary/30 backdrop-blur-sm bg-primary/10 p-12 md:p-16">
+              <div className="absolute inset-0 bg-primary/5 opacity-50" />
               <div className="relative text-center space-y-8">
                 <h2 className="text-5xl font-bold">
                   프로젝트 상담이
@@ -348,7 +348,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-background font-semibold"
+                    className="bg-primary hover:opacity-90 text-background font-semibold"
                   >
                     지금 문의하기
                     <ArrowRight className="ml-2 w-4 h-4" />

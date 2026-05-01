@@ -34,7 +34,7 @@ export default function ModernNav() {
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <a href="/" className="text-2xl font-bold text-primary">
             Pixelkorea
           </a>
 
@@ -47,7 +47,7 @@ export default function ModernNav() {
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent group-hover:w-full transition-all duration-300" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </div>
@@ -56,7 +56,7 @@ export default function ModernNav() {
           <div className="flex items-center gap-4">
             <Button
               size="sm"
-              className="hidden sm:flex bg-gradient-to-r from-primary to-accent hover:opacity-90 text-background font-semibold"
+              className="hidden sm:flex bg-primary hover:opacity-90 text-background font-semibold"
             >
               문의하기
             </Button>
@@ -89,7 +89,7 @@ export default function ModernNav() {
                 </a>
               ))}
             </nav>
-            <Button className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 text-background font-semibold">
+            <Button className="w-full bg-primary hover:opacity-90 text-background font-semibold">
               문의하기
             </Button>
           </div>

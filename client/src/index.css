@@ -44,36 +44,36 @@
 }
 
 :root {
-  /* Pixelkorea 2026 Modern Theme */
-  --primary: #00d9ff;                  /* Bright Cyan (Neon) */
+  /* Pixelkorea 2026 Modern Theme - Clean & Simple */
+  --primary: #00d9ff;                  /* Bright Cyan (Neon) - Main Accent */
   --primary-foreground: #0a0e27;
   --sidebar-primary: #00d9ff;
   --sidebar-primary-foreground: #0a0e27;
   --chart-1: #00d9ff;
-  --chart-2: #06b6d4;
-  --chart-3: #a855f7;                  /* Purple */
-  --chart-4: #ec4899;                  /* Pink */
-  --chart-5: #8b5cf6;
+  --chart-2: #00d9ff;
+  --chart-3: #00d9ff;
+  --chart-4: #00d9ff;
+  --chart-5: #00d9ff;
   --radius: 0.75rem;
   --background: #0a0e27;               /* Almost Black Navy */
-  --foreground: #f8fafc;               /* Almost White */
+  --foreground: #f1f5f9;               /* Clean White */
   --card: #141829;                     /* Slightly Lighter Navy */
-  --card-foreground: #f8fafc;
+  --card-foreground: #f1f5f9;
   --popover: #141829;
-  --popover-foreground: #f8fafc;
-  --secondary: #1e293b;
-  --secondary-foreground: #cbd5e1;
-  --muted: #334155;
-  --muted-foreground: #cbd5e1;
+  --popover-foreground: #f1f5f9;
+  --secondary: #1e293b;                /* Dark Gray */
+  --secondary-foreground: #cbd5e1;     /* Light Gray */
+  --muted: #334155;                    /* Medium Gray */
+  --muted-foreground: #cbd5e1;         /* Light Gray */
   --accent: #00d9ff;                   /* Bright Cyan */
   --accent-foreground: #0a0e27;
   --destructive: #ef4444;
-  --destructive-foreground: #f8fafc;
+  --destructive-foreground: #f1f5f9;
   --border: #1e293b;                   /* Subtle Border */
   --input: #141829;
   --ring: #00d9ff;
   --sidebar: #141829;
-  --sidebar-foreground: #f8fafc;
+  --sidebar-foreground: #f1f5f9;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #00d9ff;
   --sidebar-border: #1e293b;
