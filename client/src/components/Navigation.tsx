@@ -16,12 +16,12 @@ export default function Navigation() {
   }, []);
 
   const menuItems = [
-    { label: "Solutions", href: "#solutions" },
-    { label: "Products", href: "#products" },
+    { label: "Solutions", href: "/solutions" },
+    { label: "Products", href: "/products" },
     { label: "Case Studies", href: "/case-studies" },
     { label: "Support", href: "/support" },
     { label: "Blog", href: "/blog" },
-    { label: "About", href: "#about" },
+    { label: "About", href: "/about" },
   ];
 
   return (
@@ -56,12 +56,14 @@ export default function Navigation() {
 
           {/* Right Side */}
           <div className="flex items-center gap-4">
-            <Button
-              size="sm"
-              className="hidden sm:flex bg-primary hover:opacity-90 text-background font-semibold"
-            >
-              문의하기
-            </Button>
+            <a href="/contact">
+              <Button
+                size="sm"
+                className="hidden sm:flex bg-primary hover:opacity-90 text-background font-semibold"
+              >
+                문의하기
+              </Button>
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -91,9 +93,11 @@ export default function Navigation() {
                 </a>
               ))}
             </nav>
-            <Button className="w-full bg-primary hover:opacity-90 text-background font-semibold">
-              문의하기
-            </Button>
+            <a href="/contact" className="block">
+              <Button className="w-full bg-primary hover:opacity-90 text-background font-semibold">
+                문의하기
+              </Button>
+            </a>
           </div>
         </div>
       )}
