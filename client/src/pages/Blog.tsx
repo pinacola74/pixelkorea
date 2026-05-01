@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import AnimatedBackground from "@/components/AnimatedBackground";
 import { ArrowRight, Search } from "lucide-react";
 import { useState } from "react";
 
@@ -95,9 +96,12 @@ export default function Blog() {
   });
 
   return (
-    <div className="min-h-screen bg-white text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      {/* Animated Background */}
+      <AnimatedBackground intensity="low" />
+
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-border">
+      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border relative z-20">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="/" className="text-2xl font-bold text-primary">Pixelkorea</a>
           <div className="hidden md:flex gap-8 text-sm">
@@ -110,7 +114,7 @@ export default function Blog() {
       </nav>
 
       {/* Header */}
-      <section className="py-16 md:py-24 bg-blue-50">
+      <section className="py-16 md:py-24 bg-card/50 backdrop-blur-sm relative z-10">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-5xl font-bold mb-4">기술 문서 & 뉴스</h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
@@ -120,7 +124,7 @@ export default function Blog() {
       </section>
 
       {/* Search & Filter */}
-      <section className="py-12 border-b border-border">
+      <section className="py-12 border-b border-border relative z-10 bg-background/50 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-6">
           {/* Search Bar */}
           <div className="mb-8 relative">
@@ -154,7 +158,7 @@ export default function Blog() {
       </section>
 
       {/* Posts */}
-      <section className="py-16">
+      <section className="py-16 relative z-10">
         <div className="max-w-4xl mx-auto px-6">
           {filteredPosts.length > 0 ? (
             <div className="space-y-8">
@@ -205,7 +209,7 @@ export default function Blog() {
       </section>
 
       {/* Newsletter */}
-      <section className="py-16 md:py-24 bg-blue-50">
+      <section className="py-16 md:py-24 bg-card/50 backdrop-blur-sm relative z-10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">새로운 포스트를 받아보세요</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -223,7 +227,7 @@ export default function Blog() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-secondary border-t border-border py-12">
+      <footer className="bg-card border-t border-border py-12 relative z-10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>

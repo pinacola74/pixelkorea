@@ -43,40 +43,40 @@
 }
 
 :root {
-  /* Pixelkorea Minimal Light Theme */
+  /* Pixelkorea Dark Theme with Animated Background */
   --primary: #0052cc;                  /* Professional Blue */
-  --primary-foreground: #ffffff;
+  --primary-foreground: #f1f5f9;
   --sidebar-primary: #0052cc;
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary-foreground: #f1f5f9;
   --chart-1: #0052cc;
   --chart-2: #1e40af;
-  --chart-3: #2563eb;
-  --chart-4: #3b82f6;
+  --chart-3: #06b6d4;                  /* Cyan */
+  --chart-4: #8b5cf6;                  /* Purple */
   --chart-5: #60a5fa;
   --radius: 0.5rem;
-  --background: #ffffff;               /* Pure White */
-  --foreground: #1a1a1a;               /* Dark Text */
-  --card: #ffffff;
-  --card-foreground: #1a1a1a;
-  --popover: #ffffff;
-  --popover-foreground: #1a1a1a;
-  --secondary: #f5f5f5;
-  --secondary-foreground: #333333;
-  --muted: #f0f0f0;
-  --muted-foreground: #666666;
-  --accent: #0052cc;
-  --accent-foreground: #ffffff;
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --border: #e0e0e0;                  /* Light Gray */
-  --input: #f5f5f5;
-  --ring: #0052cc;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #1a1a1a;
-  --sidebar-accent: #f5f5f5;
-  --sidebar-accent-foreground: #0052cc;
-  --sidebar-border: #e0e0e0;
-  --sidebar-ring: #0052cc;
+  --background: #0f172a;               /* Deep Navy */
+  --foreground: #f1f5f9;               /* Bright Gray */
+  --card: #1e293b;                     /* Dark Slate */
+  --card-foreground: #f1f5f9;
+  --popover: #1e293b;
+  --popover-foreground: #f1f5f9;
+  --secondary: #1e293b;
+  --secondary-foreground: #cbd5e1;
+  --muted: #334155;
+  --muted-foreground: #cbd5e1;
+  --accent: #06b6d4;                   /* Cyan */
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f1f5f9;
+  --border: #334155;                   /* Dark Gray */
+  --input: #1e293b;
+  --ring: #06b6d4;
+  --sidebar: #1e293b;
+  --sidebar-foreground: #f1f5f9;
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: #06b6d4;
+  --sidebar-border: #334155;
+  --sidebar-ring: #06b6d4;
 }
 
 .dark {
@@ -100,6 +100,40 @@
   input[type="checkbox"]:not(:disabled),
   input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-30px) translateX(15px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shapePulse {
+  0%, 100% {
+    transform: scale(1) translateY(0px);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.1) translateY(-15px);
+    opacity: 0.2;
   }
 }
 
